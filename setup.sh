@@ -15,12 +15,11 @@ fi
 sudo easy_install -ZU autopep8 
 sudo ln -s /usr/bin/ctags /usr/local/bin/ctags
 
-cd ~/ && curl -O https://github.com/YazaiHu/common-vim/archive/master.zip && unzip master.zip && cd common-vim-master && tar zxvf vim.tar.gz
-#cd ~/ && git clone https://github.com/YazaiHu/common-vim.git && cd common-vim && tar zxvf vim.tar.gz
+cd ~/ && git clone https://github.com/YazaiHu/common-vim.git && cd common-vim && tar zxvf vim.tar.gz
 mv -f ~/.vim ~/.vim_old
 mv -f ~/.vimrc ~/.vimrc_old
 
-mv -f ~/common-vim-master/vim/vimrc  ~/.vimrc
-mv -f ~/common-vim-master/vim ~/.vim
+mv -f ~/common-vim/vim/vimrc  ~/.vimrc
+mv -f ~/common-vim/vim ~/.vim
 
 echo "安装完成"
